@@ -1,37 +1,42 @@
 {
-  "name": "loopback-component-passport",
-  "description": "LoopBack passport integration to support third party logins and account linking",
-  "engines": {
-    "node": ">=8.9"
+  "_from": "git+ssh://git@gitlab.aengine.com.cn:Wei.Zhou/loopback-component-passport.git",
+  "_id": "loopback-component-passport@3.12.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/loopback-component-passport",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "loopback-component-passport@git+ssh://git@gitlab.aengine.com.cn:Wei.Zhou/loopback-component-passport.git",
+    "name": "loopback-component-passport",
+    "escapedName": "loopback-component-passport",
+    "rawSpec": "git+ssh://git@gitlab.aengine.com.cn:Wei.Zhou/loopback-component-passport.git",
+    "saveSpec": "git+ssh://git@gitlab.aengine.com.cn:Wei.Zhou/loopback-component-passport.git",
+    "fetchSpec": "git@gitlab.aengine.com.cn:Wei.Zhou/loopback-component-passport.git",
+    "gitCommittish": null
   },
-  "keywords": [
-    "StrongLoop",
-    "LoopBack",
-    "social",
-    "login",
-    "security"
+  "_requiredBy": [
+    "/"
   ],
-  "homepage": "https://github.com/strongloop/loopback-component-passport",
-  "version": "3.12.0",
-  "maintainers": [
-    {
-      "name": "Raymond Feng",
-      "email": "raymond@strongloop.com"
-    }
-  ],
+  "_resolved": "git+ssh://git@gitlab.aengine.com.cn:Wei.Zhou/loopback-component-passport.git#ea0214d14e0553b4577d7184f43c152d28dbb9f7",
+  "_spec": "loopback-component-passport@git+ssh://git@gitlab.aengine.com.cn:Wei.Zhou/loopback-component-passport.git",
+  "_where": "/home/neil/code/cms",
+  "author": {
+    "name": "IBM Corp."
+  },
   "bugs": {
     "url": "https://github.com/strongloop/loopback-component-passport/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/strongloop/loopback-component-passport.git"
-  },
+  "bundleDependencies": false,
   "dependencies": {
+    "jsonwebtoken": "^8.5.1",
     "passport": "^0.4.0",
     "strong-globalize": "^4.1.1",
     "underscore": "^1.9.1",
     "uuid": "^3.2.1"
   },
+  "deprecated": false,
+  "description": "LoopBack passport integration to support third party logins and account linking",
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-loopback": "^10.0.0",
@@ -41,12 +46,34 @@
     "sinon": "^1.17.5",
     "supertest": "^3.1.0"
   },
+  "engines": {
+    "node": ">=8.9"
+  },
+  "homepage": "https://github.com/strongloop/loopback-component-passport",
+  "keywords": [
+    "StrongLoop",
+    "LoopBack",
+    "social",
+    "login",
+    "security"
+  ],
+  "license": "Artistic-2.0",
+  "main": "./lib/index.js",
+  "maintainers": [
+    {
+      "name": "Raymond Feng",
+      "email": "raymond@strongloop.com"
+    }
+  ],
+  "name": "loopback-component-passport",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strongloop/loopback-component-passport.git"
+  },
   "scripts": {
     "lint": "eslint .",
-    "test": "./node_modules/.bin/mocha -R spec --timeout 10000 test/*.js",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint",
+    "test": "mocha -R spec --timeout 10000 test/*.js"
   },
-  "main": "./lib/index.js",
-  "license": "Artistic-2.0",
-  "author": "IBM Corp."
+  "version": "3.12.0"
 }
